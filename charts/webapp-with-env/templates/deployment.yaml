@@ -22,4 +22,4 @@ spec:
             - containerPort: {{ .Values.service.targetPort }}
           envFrom:
             - configMapRef:
-                name: {{ .Release.Name }}-env-config
+                name: {{ .Release.Name }}-env-config-random
